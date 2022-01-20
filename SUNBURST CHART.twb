@@ -1,0 +1,439 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 10300.19.0909.2030                               -->
+<workbook original-version='10.3' source-build='10.3.25 (10300.19.0909.2030)' source-platform='win' version='10.3' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Custom SQL Query (cleaned_data)' inline='true' name='federated.103jwzo1uhfxed10tcwzl1cx256t' version='10.3'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='cleaned_data' name='excel.1w5xayf06gtzmw12uln0m00unn8q'>
+            <connection class='excel' driver='Ace12' filename='E:/Tableau_Practice/cleaned_data.xlsx' header='yes' imex='1' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel.1w5xayf06gtzmw12uln0m00unn8q' name='Custom SQL Query' type='text'>SELECT [&apos;SUNBURST CHART$&apos;].[AssignmentMarks] AS [AssignmentMarks],&#10;  [&apos;SUNBURST CHART$&apos;].[AverageQuizMarkforallSubject] AS [AverageQuizMarkforallSubject],&#10;  [&apos;SUNBURST CHART$&apos;].[CGPA] AS [CGPA],&#10;  [&apos;SUNBURST CHART$&apos;].[ClasstestaverageResult] AS [ClasstestaverageResult],&#10;  [&apos;SUNBURST CHART$&apos;].[Faculty(CSE-EEE-BBA)] AS [Faculty(CSE-EEE-BBA)],&#10;  [&apos;SUNBURST CHART$&apos;].[Level] AS [Level],&#10;  [&apos;SUNBURST CHART$&apos;].[MidTermaveragemarks] AS [MidTermaveragemarks],&#10;  [&apos;SUNBURST CHART$&apos;].[NumberOfCounseling] AS [NumberOfCounseling],&#10;  [&apos;SUNBURST CHART$&apos;].[NumberOfCourseDrop] AS [NumberOfCourseDrop],&#10;  [&apos;SUNBURST CHART$&apos;].[NumberOfCourseRetake] AS [NumberOfCourseRetake],&#10;  [&apos;SUNBURST CHART$&apos;].[Semester(Spring-Fall-Summer)] AS [Semester(Spring-Fall-Summer)],&#10;  [&apos;SUNBURST CHART$&apos;].[SemesterFinalResult] AS [SemesterFinalResult],&#10;  [&apos;SUNBURST CHART$&apos;].[SGPA] AS [SGPA],&#10;  [&apos;SUNBURST CHART$&apos;].[Sum of Dropout(dropout=1-notdropout=0)] AS [Sum of Dropout(dropout=1-notdropout=0)],&#10;  [&apos;SUNBURST CHART$&apos;].[TotalAttendance] AS [TotalAttendance],&#10;  [&apos;SUNBURST CHART$&apos;].[TotalClass] AS [TotalClass],&#13;&#10;  1 as ToPad&#10;FROM [&apos;SUNBURST CHART$&apos;]&#13;&#10;&#13;&#10;UNION ALL&#13;&#10;&#13;&#10;SELECT [&apos;SUNBURST CHART$&apos;].[AssignmentMarks] AS [AssignmentMarks],&#13;&#10;  [&apos;SUNBURST CHART$&apos;].[AverageQuizMarkforallSubject] AS [AverageQuizMarkforallSubject],&#13;&#10;  [&apos;SUNBURST CHART$&apos;].[CGPA] AS [CGPA],&#13;&#10;  [&apos;SUNBURST CHART$&apos;].[ClasstestaverageResult] AS [ClasstestaverageResult],&#13;&#10;  [&apos;SUNBURST CHART$&apos;].[Faculty(CSE-EEE-BBA)] AS [Faculty(CSE-EEE-BBA)],&#13;&#10;  [&apos;SUNBURST CHART$&apos;].[Level] AS [Level],&#13;&#10;  [&apos;SUNBURST CHART$&apos;].[MidTermaveragemarks] AS [MidTermaveragemarks],&#13;&#10;  [&apos;SUNBURST CHART$&apos;].[NumberOfCounseling] AS [NumberOfCounseling],&#13;&#10;  [&apos;SUNBURST CHART$&apos;].[NumberOfCourseDrop] AS [NumberOfCourseDrop],&#13;&#10;  [&apos;SUNBURST CHART$&apos;].[NumberOfCourseRetake] AS [NumberOfCourseRetake],&#13;&#10;  [&apos;SUNBURST CHART$&apos;].[Semester(Spring-Fall-Summer)] AS [Semester(Spring-Fall-Summer)],&#13;&#10;  [&apos;SUNBURST CHART$&apos;].[SemesterFinalResult] AS [SemesterFinalResult],&#13;&#10;  [&apos;SUNBURST CHART$&apos;].[SGPA] AS [SGPA],&#13;&#10;  [&apos;SUNBURST CHART$&apos;].[Sum of Dropout(dropout=1-notdropout=0)] AS [Sum of Dropout(dropout=1-notdropout=0)],&#13;&#10;  [&apos;SUNBURST CHART$&apos;].[TotalAttendance] AS [TotalAttendance],&#13;&#10;  [&apos;SUNBURST CHART$&apos;].[TotalClass] AS [TotalClass],&#13;&#10;  203 as ToPad&#13;&#10;FROM [&apos;SUNBURST CHART$&apos;]</relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>AssignmentMarks</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AssignmentMarks]</local-name>
+            <parent-name>[Custom SQL Query]</parent-name>
+            <remote-alias>AssignmentMarks</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AverageQuizMarkforallSubject</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[AverageQuizMarkforallSubject]</local-name>
+            <parent-name>[Custom SQL Query]</parent-name>
+            <remote-alias>AverageQuizMarkforallSubject</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='1' name='LEN_RUS_S2_WO' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CGPA</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[CGPA]</local-name>
+            <parent-name>[Custom SQL Query]</parent-name>
+            <remote-alias>CGPA</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='1' name='LEN_RUS_S2_WO' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ClasstestaverageResult</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[ClasstestaverageResult]</local-name>
+            <parent-name>[Custom SQL Query]</parent-name>
+            <remote-alias>ClasstestaverageResult</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='1' name='LEN_RUS_S2_WO' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Faculty(CSE-EEE-BBA)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Faculty(CSE-EEE-BBA)]</local-name>
+            <parent-name>[Custom SQL Query]</parent-name>
+            <remote-alias>Faculty(CSE-EEE-BBA)</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Level</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Level]</local-name>
+            <parent-name>[Custom SQL Query]</parent-name>
+            <remote-alias>Level</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MidTermaveragemarks</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[MidTermaveragemarks]</local-name>
+            <parent-name>[Custom SQL Query]</parent-name>
+            <remote-alias>MidTermaveragemarks</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='1' name='LEN_RUS_S2_WO' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NumberOfCounseling</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[NumberOfCounseling]</local-name>
+            <parent-name>[Custom SQL Query]</parent-name>
+            <remote-alias>NumberOfCounseling</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NumberOfCourseDrop</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[NumberOfCourseDrop]</local-name>
+            <parent-name>[Custom SQL Query]</parent-name>
+            <remote-alias>NumberOfCourseDrop</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='1' name='LEN_RUS_S2_WO' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NumberOfCourseRetake</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[NumberOfCourseRetake]</local-name>
+            <parent-name>[Custom SQL Query]</parent-name>
+            <remote-alias>NumberOfCourseRetake</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Semester(Spring-Fall-Summer)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Semester(Spring-Fall-Summer)]</local-name>
+            <parent-name>[Custom SQL Query]</parent-name>
+            <remote-alias>Semester(Spring-Fall-Summer)</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SemesterFinalResult</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[SemesterFinalResult]</local-name>
+            <parent-name>[Custom SQL Query]</parent-name>
+            <remote-alias>SemesterFinalResult</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='1' name='LEN_RUS_S2_WO' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SGPA</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[SGPA]</local-name>
+            <parent-name>[Custom SQL Query]</parent-name>
+            <remote-alias>SGPA</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sum of Dropout(dropout=1-notdropout=0)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Sum of Dropout(dropout=1-notdropout=0)]</local-name>
+            <parent-name>[Custom SQL Query]</parent-name>
+            <remote-alias>Sum of Dropout(dropout=1-notdropout=0)</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotalAttendance</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[TotalAttendance]</local-name>
+            <parent-name>[Custom SQL Query]</parent-name>
+            <remote-alias>TotalAttendance</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotalClass</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[TotalClass]</local-name>
+            <parent-name>[Custom SQL Query]</parent-name>
+            <remote-alias>TotalClass</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ToPad</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[ToPad]</local-name>
+            <parent-name>[Custom SQL Query]</parent-name>
+            <remote-alias>ToPad</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I4&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Assignment Marks' datatype='real' name='[AssignmentMarks]' role='measure' type='quantitative' />
+      <column caption='Average Quiz Markforall Subject' datatype='string' name='[AverageQuizMarkforallSubject]' role='dimension' type='nominal' />
+      <column caption='Cgpa' datatype='string' name='[CGPA]' role='dimension' type='nominal' />
+      <column caption='Index' datatype='integer' name='[Calculation_470344743717556224]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='INDEX()'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='Max Level' datatype='real' name='[Calculation_470344743719350273]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='WINDOW_MAX(MAX([Level]))'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='Max Dropout' datatype='string' name='[Calculation_470344743719919618]' role='measure' type='nominal'>
+        <calculation class='tableau' formula='WINDOW_MAX(MAX([NumberOfCourseDrop]))'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='Slice Level' datatype='real' name='[Calculation_470344743720468483]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='WINDOW_MAX(MAX([Level]))'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='Slice Size' datatype='real' name='[Calculation_470344743720628228]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Calculation_470344743719919618]/WINDOW_SUM(IIF([Calculation_470344743719350273]=1,[Calculation_470344743719919618]/203,0))' />
+      </column>
+      <column caption='Classtestaverage Result' datatype='string' name='[ClasstestaverageResult]' role='dimension' type='nominal' />
+      <column caption='Mid Termaveragemarks' datatype='string' name='[MidTermaveragemarks]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Number Of Counseling' datatype='real' name='[NumberOfCounseling]' role='measure' type='quantitative' />
+      <column caption='Number Of Course Drop' datatype='string' name='[NumberOfCourseDrop]' role='dimension' type='nominal' />
+      <column caption='Number Of Course Retake' datatype='real' name='[NumberOfCourseRetake]' role='measure' type='quantitative' />
+      <column caption='Sgpa' datatype='real' name='[SGPA]' role='measure' type='quantitative' />
+      <column caption='Semester Final Result' datatype='string' name='[SemesterFinalResult]' role='dimension' type='nominal' />
+      <column caption='Padded' datatype='integer' name='[ToPad (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='0' formula='[ToPad]' peg='0' size='1' />
+      </column>
+      <column aggregation='Sum' datatype='integer' name='[ToPad]' role='dimension' type='ordinal' />
+      <column caption='Total Attendance' datatype='real' name='[TotalAttendance]' role='measure' type='quantitative' />
+      <column caption='Total Class' datatype='real' name='[TotalClass]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.392116' measure-ordering='alphabetic' measure-percentage='0.607884' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Custom SQL Query (cleaned_data)' name='federated.103jwzo1uhfxed10tcwzl1cx256t' />
+          </datasources>
+          <datasource-dependencies datasource='federated.103jwzo1uhfxed10tcwzl1cx256t'>
+            <column caption='Index' datatype='integer' name='[Calculation_470344743717556224]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='INDEX()'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='Padded' datatype='integer' name='[ToPad (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[ToPad]' peg='0' size='1' />
+            </column>
+            <column aggregation='Sum' datatype='integer' name='[ToPad]' role='dimension' type='ordinal' />
+            <column-instance column='[ToPad (bin)]' derivation='None' name='[none:ToPad (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_470344743717556224]' derivation='User' name='[usr:Calculation_470344743717556224:qk:2]' pivot='key' type='quantitative'>
+              <table-calc ordering-field='[federated.103jwzo1uhfxed10tcwzl1cx256t].[ToPad (bin)]' ordering-type='Field' />
+            </column-instance>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.103jwzo1uhfxed10tcwzl1cx256t].[none:ToPad (bin):ok]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.103jwzo1uhfxed10tcwzl1cx256t].[usr:Calculation_470344743717556224:qk:2]</cols>
+        <show-full-range>
+          <column>[federated.103jwzo1uhfxed10tcwzl1cx256t].[ToPad (bin)]</column>
+        </show-full-range>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.103jwzo1uhfxed10tcwzl1cx256t].[none:ToPad (bin):ok]</field>
+            <field>[federated.103jwzo1uhfxed10tcwzl1cx256t].[none:ToPad:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='79' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
